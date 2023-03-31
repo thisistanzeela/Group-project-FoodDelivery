@@ -192,6 +192,7 @@ a:hover {
   #check:checked~ul {
     left: 0;
   }
+ 
 }
 
 .order_button:hover {
@@ -390,16 +391,15 @@ label{
   font-weight: lighter;
   font-size: 14px;
 }
-#email{
+.form #email{
   background-color: #649483 !important;
   padding: 8px 36px 6px 8px;
   margin-top: 8px;
-  /* border-color:#ffece1; */
   border: 2px solid #ffece1;
   color: #ffece1;
   border-radius: 8px;
 }
-#email placeholder{
+::placeholder{
   color: #ffece1;
 }
 #submit{
@@ -412,10 +412,6 @@ label{
   text-transform: uppercase;
 }
 footer{
-  /* display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center; */
   margin-left: 100px;
   padding: 48px 42px;
   color: #ffece1;
@@ -427,4 +423,28 @@ footer{
 
 .fa-facebook-square,.fa-instagram,.fa-twitter{
   color: #ffece1;
+}
+
+@media (max-width: 858px) {
+  .footer .dis{
+    display: none;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  footer{
+    margin-left: 50px;
+  }
+  .container-fluid.heading{
+    font-size: 10% !important;
+    font-weight: 100;
+    margin-left: 10px;
+    /* position: absolute; */
+    margin-top: 40px;
+  }
+  .lead{
+    display: none;
+  }
 }
