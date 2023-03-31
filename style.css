@@ -47,7 +47,7 @@ p.lead {
   color: #649483;
 }
 
-.btn-main {
+a.btn-main  {
   margin-left: 140px;
   position: absolute;
   margin-top: 470px;
@@ -60,6 +60,7 @@ p.lead {
   color: #ffece1;
   padding-left: 40px;
   padding-right: 40px;
+  
 }
 
 .btn-main:hover {
@@ -72,9 +73,10 @@ p.lead {
   font-weight: 700;
   font-size: 18px;
   border-radius: 30px;
-  color: #649483;
+  color: #649483 !important;
   padding-left: 40px;
   padding-right: 40px;
+  text-decoration: none;
 }
 
 nav {
@@ -113,6 +115,7 @@ nav ul li a {
   border-radius: 3px;
   /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
+  
 }
 
 a.active,
@@ -120,6 +123,7 @@ a:hover {
   background: #dd7017;
   transition: 0.5s;
   color: #fff !important;
+  cursor: pointer;
 }
 
 #order_number:hover {
@@ -345,11 +349,82 @@ input.cart_input_quanlity {
   background-color: #649483;
 }
 
-/* ::-webkit-scrollbar-track { */
-/* background-color: #ffece1; */
-/* } */
+/* ::-webkit-scrollbar-track { 
+background-color: #ffece1;
+ }
 
-/* #list_food_home{
+#list_food_home{
   background-color: #649483;
   max-width:100%;
 } */
+
+/* footer */
+
+.footer{
+  margin-top: 20px;
+  background-color: #649483;
+}
+.grid-into4{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #ffece1;
+}
+.grid-into4 h3{
+  text-transform: uppercase;
+  padding-top:50px;
+  margin-bottom: 12px;
+}
+.grid-into4 li{
+  list-style-type:none;
+  font-weight: lighter;
+  font-size: 14px;
+}
+.grid-into4 ol{
+  margin-bottom: 60px;
+  
+}
+.form h3{
+  padding-left:0;
+}
+label{
+  font-weight: lighter;
+  font-size: 14px;
+}
+#email{
+  background-color: #649483 !important;
+  padding: 8px 36px 6px 8px;
+  margin-top: 8px;
+  /* border-color:#ffece1; */
+  border: 2px solid #ffece1;
+  color: #ffece1;
+  border-radius: 8px;
+}
+#email placeholder{
+  color: #ffece1;
+}
+#submit{
+  color: #649483;
+  background-color: #ffece1;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 10px;
+  text-transform: uppercase;
+}
+footer{
+  /* display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center; */
+  margin-left: 100px;
+  padding: 48px 42px;
+  color: #ffece1;
+}
+.icon{
+  word-spacing: 8px;
+  font-size: 20px;
+}
+
+.fa-facebook-square,.fa-instagram,.fa-twitter{
+  color: #ffece1;
+}
