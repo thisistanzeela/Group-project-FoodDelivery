@@ -1,7 +1,7 @@
 # Group-project-FoodDelivery
 This is a food delivery app built using HTML, CSS, and JavaScript. Users can sign up or log in to the app and order food based on their preferences. The app allows users to add food to their cart, enter their payment and delivery address, and place an order. The admin can then process the order and the user can receive their food.
 
-#Getting Started
+##Getting Started
 
 To get started with the app, you can either clone the repository or download the source code. Once you have the source code, you can open the index.html file in your preferred browser to start using the app.
 
