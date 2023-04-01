@@ -191,8 +191,7 @@ if (food === null) {
       name: "Sushi Samon",
       price: "400",
       note: "Lorem ipsum dolor sit amet, consectetur adipiscing ",
-      image:
-        "image/sushi.avif",
+      image: "image/sushi.avif",
     },
     {
       id: 4,
@@ -213,8 +212,7 @@ if (food === null) {
       name: "Burger Fries",
       price: "700",
       note: "Lorem ipsum dolor sit amet sed do ",
-      image:
-        "image/burger-fries.avif",
+      image: "image/burger-fries.avif",
     },
     {
       id: 7,
@@ -226,7 +224,6 @@ if (food === null) {
   ];
   localStorage.setItem("food", JSON.stringify(food));
 }
-
 
 var orderFood = JSON.parse(localStorage.getItem("orderFood"));
 
@@ -242,7 +239,6 @@ if (account_info === null) {
   var account_info = [{}];
   // localStorage.setItem("account_info", JSON.stringify(account_info));
 }
-
 
 //login autorization in local storage.......
 var checkLogin = JSON.parse(localStorage.getItem("checkLogin"));
@@ -408,7 +404,7 @@ function totalMoney(checkLogin) {
       total_order += orderFood[i].price_order * orderFood[i].quanlity_order;
     }
   }
-  document.getElementById("total_money").innerHTML = "₹" + total_order ;
+  document.getElementById("total_money").innerHTML = "₹" + total_order;
 }
 
 function upQuality(id_order) {
@@ -501,7 +497,7 @@ function payment() {
   }
 }
 
-// order 
+// order
 function orderPrinf() {
   document.getElementById("prinf_order").innerHTML = "";
   for (let i = 0; i < paymentFood.length; i++) {
