@@ -124,6 +124,7 @@ a:hover {
   transition: 0.5s;
   color: #fff !important;
   cursor: pointer;
+  /* text-decoration: none; */
 }
 
 #order_number:hover {
