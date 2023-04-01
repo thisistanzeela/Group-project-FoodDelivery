@@ -192,6 +192,17 @@ a:hover {
   #check:checked~ul {
     left: 0;
   }
+  
+  .container-fluid.heading{
+    font-size: 10% !important;
+    font-weight: 100;
+    margin-left: 10px;
+    /* position: absolute; */
+    margin-top: 40px;
+  }
+  .lead{
+    display: none;
+  }
  
 }
 
@@ -436,15 +447,5 @@ footer{
   }
   footer{
     margin-left: 50px;
-  }
-  .container-fluid.heading{
-    font-size: 10% !important;
-    font-weight: 100;
-    margin-left: 10px;
-    /* position: absolute; */
-    margin-top: 40px;
-  }
-  .lead{
-    display: none;
   }
 }
