@@ -11,7 +11,7 @@ User authentication: Users can sign up or log in to the app to access its featur
 
 #Technology Stack The food delivery app is built using the following technologies:
 
-HTML: The app's user interface is built using HTML.
+-HTML: The app's user interface is built using HTML.
 
 CSS: The app's styles are written in CSS to enhance the user interface.
 
