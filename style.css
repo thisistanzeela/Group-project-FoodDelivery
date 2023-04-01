@@ -47,7 +47,7 @@ p.lead {
   color: #649483;
 }
 
-.btn-main {
+a.btn-main  {
   margin-left: 140px;
   position: absolute;
   margin-top: 470px;
@@ -60,6 +60,7 @@ p.lead {
   color: #ffece1;
   padding-left: 40px;
   padding-right: 40px;
+  
 }
 
 .btn-main:hover {
@@ -72,9 +73,10 @@ p.lead {
   font-weight: 700;
   font-size: 18px;
   border-radius: 30px;
-  color: #649483;
+  color: #649483 !important;
   padding-left: 40px;
   padding-right: 40px;
+  text-decoration: none;
 }
 
 nav {
@@ -113,6 +115,7 @@ nav ul li a {
   border-radius: 3px;
   /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
+  
 }
 
 a.active,
@@ -120,6 +123,7 @@ a:hover {
   background: #dd7017;
   transition: 0.5s;
   color: #fff !important;
+  cursor: pointer;
 }
 
 #order_number:hover {
@@ -188,6 +192,18 @@ a:hover {
   #check:checked~ul {
     left: 0;
   }
+  
+  .container-fluid.heading{
+    font-size: 10% !important;
+    font-weight: 100;
+    margin-left: 10px;
+    /* position: absolute; */
+    margin-top: 40px;
+  }
+  .lead{
+    display: none;
+  }
+ 
 }
 
 .order_button:hover {
@@ -345,11 +361,11 @@ input.cart_input_quanlity {
   background-color: #649483;
 }
 
-/* ::-webkit-scrollbar-track { */
-/* background-color: #ffece1; */
-/* } */
+/* ::-webkit-scrollbar-track { 
+background-color: #ffece1;
+ }
 
-/* #list_food_home{
+#list_food_home{
   background-color: #649483;
   max-width:100%;
 } */
@@ -386,16 +402,15 @@ label{
   font-weight: lighter;
   font-size: 14px;
 }
-#email{
+.form #email{
   background-color: #649483 !important;
   padding: 8px 36px 6px 8px;
   margin-top: 8px;
-  /* border-color:#ffece1; */
   border: 2px solid #ffece1;
   color: #ffece1;
   border-radius: 8px;
 }
-#email placeholder{
+::placeholder{
   color: #ffece1;
 }
 #submit{
@@ -408,10 +423,6 @@ label{
   text-transform: uppercase;
 }
 footer{
-  /* display: flex;
-  flex-direction:row;
-  justify-content: center;
-  align-items: center; */
   margin-left: 100px;
   padding: 48px 42px;
   color: #ffece1;
@@ -423,4 +434,18 @@ footer{
 
 .fa-facebook-square,.fa-instagram,.fa-twitter{
   color: #ffece1;
+}
+
+@media (max-width: 858px) {
+  .footer .dis{
+    display: none;
+  }
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  footer{
+    margin-left: 50px;
+  }
 }
