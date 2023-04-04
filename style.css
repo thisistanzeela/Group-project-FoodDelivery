@@ -43,7 +43,7 @@ p.lead {
   color: #649483;
 }
 
-a.btn-main  {
+a.btn-main {
   margin-left: 140px;
   position: absolute;
   margin-top: 470px;
@@ -56,7 +56,7 @@ a.btn-main  {
   color: #ffece1;
   padding-left: 40px;
   padding-right: 40px;
-  
+
 }
 
 .btn-main:hover {
@@ -111,7 +111,8 @@ nav ul li a {
   border-radius: 3px;
   /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
-  
+  list-style-type: none;
+
 }
 
 a.active,
@@ -120,6 +121,7 @@ a:hover {
   transition: 0.5s;
   color: #fff !important;
   cursor: pointer;
+  list-style-type: none !important;
 }
 
 #order_number:hover {
@@ -188,18 +190,19 @@ a:hover {
   #check:checked~ul {
     left: 0;
   }
-  
-  .container-fluid.heading{
+
+  .container-fluid.heading {
     font-size: 10% !important;
     font-weight: 100;
     margin-left: 10px;
     /* position: absolute; */
     margin-top: 40px;
   }
-  .lead{
+
+  .lead {
     display: none;
   }
- 
+
 }
 
 .order_button:hover {
@@ -216,11 +219,13 @@ a:hover {
   width: 60%;
   height: 80px;
 }
-.fa-bars{
+
+.fa-bars {
   color: #dd7017;
   padding: 0px;
   margin: 0px;
 }
+
 input.cart_input_quanlity {
   width: 50%;
   outline: none;
@@ -368,37 +373,44 @@ background-color: #ffece1;
 
 /* footer */
 
-.footer{
+.footer {
   margin-top: 20px;
   background-color: #649483;
 }
-.grid-into4{
+
+.grid-into4 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: #ffece1;
 }
-.grid-into4 h3{
+
+.grid-into4 h3 {
   text-transform: uppercase;
-  padding-top:50px;
+  padding-top: 50px;
   margin-bottom: 12px;
 }
-.grid-into4 li{
-  list-style-type:none;
+
+.grid-into4 li {
+  list-style-type: none;
   font-weight: lighter;
   font-size: 14px;
 }
-.grid-into4 ol{
+
+.grid-into4 ol {
   margin-bottom: 60px;
-  
+
 }
-.form h3{
-  padding-left:0;
+
+.form h3 {
+  padding-left: 0;
 }
-label{
+
+label {
   font-weight: lighter;
   font-size: 14px;
 }
-.form #email{
+
+.form #email {
   background-color: #649483 !important;
   padding: 8px 36px 6px 8px;
   margin-top: 8px;
@@ -406,10 +418,12 @@ label{
   color: #ffece1;
   border-radius: 8px;
 }
-::placeholder{
+
+::placeholder {
   color: #ffece1;
 }
-#submit{
+
+#submit {
   color: #649483;
   background-color: #ffece1;
   margin-top: 10px;
@@ -418,34 +432,36 @@ label{
   padding: 8px 10px;
   text-transform: uppercase;
 }
-footer{
+
+footer {
   margin-left: 100px;
   padding: 48px 42px;
   color: #ffece1;
 }
-.icon{
+
+.icon {
   word-spacing: 8px;
   font-size: 20px;
 }
 
-.fa-facebook-square,.fa-instagram,.fa-twitter{
+.fa-facebook-square,
+.fa-instagram,
+.fa-twitter {
   color: #ffece1;
 }
 
 @media (max-width: 858px) {
-  .footer .dis{
+  .footer .dis {
     display: none;
   }
-  .form{
+
+  .form {
     display: flex;
     flex-direction: column;
     margin-left: 70px;
   }
-  footer{
+
+  footer {
     margin-left: 50px;
   }
-}
-
-li .text-deco{
-  list-style-type: none;
 }
