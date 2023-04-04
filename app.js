@@ -833,3 +833,6 @@ function onloadAll() {
   listFood();
   // paymentPrinf();
 }
+
+
+

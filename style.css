@@ -445,3 +445,7 @@ footer{
     margin-left: 50px;
   }
 }
+
+li .text-deco{
+  list-style-type: none;
+}
