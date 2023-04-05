@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{
+    margin: 0px;
+}
+.main{
+    height: 100vh;
+    background:linear-gradient(to right,#ffece1 50%,#649483 50%);   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+   
+    background:linear-gradient(to right,#649483 50%,#ffece1 50%); 
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 14px ;
+    box-shadow: 1px 0px px 1px #649483, 1px 0px 0px 0px #ffece1;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+}
+.address p{
+    display: inline-block;
+    margin: 80px 20px 20px 30px; 
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+}
+.mail p{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.number p{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.one{
+    padding: 10px 0px;
+    margin: 0px;
+   
+}
+.h1{
+   text-transform: uppercase;
+   font-size: 14px;
+   text-shadow:  1px 1px #649483;
+   line-height: 0;
+   background: #ffece1;
+   border:1px solid #ffece1;
+   border-radius:0px 8px 8px 0px;
+   margin-right:40% ;
+   box-shadow: 1px 1px 1px 1px #ffece1;
+   position: relative;
+   top: 20px;
+   /* right: 0px; */
+   color: #649483;
+}
+.address,.mail,.number{
+    padding:0;
+    padding: 0;
+    line-height:0;
+}
+a{
+    color: #ffece1;
+    font-size: 24px;
+    margin-left: 30px;
+}
+.homebtn{
+    padding: 18px 0px;
+    background: #649483;
+    color: #ffece1;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-shadow: 0px 1px #ffece1;
+    text-decoration: underline;
+}
+.homebtn:hover{
+    padding: 18px 0px;
+    background: #649483;
+    color: #dd7017;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0px 1px #ffece1;
+    text-decoration: underline;
+}
+.two{
+    color: #649483;
+    padding: 20px 10px;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    background: #649483;
+    color: #ffece1;
+    position: relative;
+    left: 12px;
+    margin-top: 10px;
+    margin-left:30% ;
+    padding:6px 0px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 1px 0px 2px 0px #649483 ;
+    border-radius:8px 0px 0px 8px;
+    text-align: right;
+    text-shadow:  1px 1px #ffece1;
+}
+input{
+    width: 20vw;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #649483;
+    box-shadow: 0px 0px 1px 0px #649483;
+    background: #ffece1;
+    color: #649483;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+input:focus,textarea:focus{
+   border-color:  #dd7017; 
+   outline: none;   
+   box-shadow: 0px 0px 3px 0px #dd7017;
+}
+
+textarea{
+    width: 20vw;
+    padding: 10px;
+    color: #649483;
+    background: #ffece1;
+    border: 1px solid #649483;
+    box-shadow: 0px 0px 1px 0px #649483;
+    border-radius: 8px;
+    text-transform: uppercase;
+    resize: none;
+    font-size: 18px;
+    font-weight:lighter;
+    margin-bottom: 16px;
+}
+.anc{
+    padding: 8px 28px;
+    background: #649483;
+    color: #ffece1;
+    border: 1px solid #ffece1;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-shadow: 0px 1px #ffece1;
+    text-decoration: none;
+}
+.anc:hover{
+    padding: 9px 30px;
+    background: #ffece1;
+    color: #649483;
+    border: 1px solid #649483;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #649483;
+}

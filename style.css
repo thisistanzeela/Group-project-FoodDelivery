@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
+  list-style: none !important;
   text-decoration: none;
 }
 
@@ -109,10 +109,7 @@ nav ul li a {
   font-size: 16px;
   padding: 7px 13px;
   border-radius: 3px;
-  /* text-transform: uppercase; */
   font-family: "Poppins", sans-serif;
-  list-style-type: none;
-
 }
 
 a.active,
@@ -121,7 +118,8 @@ a:hover {
   transition: 0.5s;
   color: #fff !important;
   cursor: pointer;
-  list-style-type: none !important;
+  list-style-type: none;
+  text-decoration: none !important;
 }
 
 #order_number:hover {
@@ -184,7 +182,7 @@ a:hover {
   a:hover,
   a.active {
     background: none;
-    color: #0082e6;
+    /* color: #0082e6; */
   }
 
   #check:checked~ul {
@@ -260,24 +258,25 @@ input.cart_input_quanlity {
   background-color: #f8fafd;
 }
 
-.khung .box {
+.logmenu .box {
   padding-left: 10px !important;
 }
 
-.khung .box img {
+.logmenu .box img {
   opacity: 1;
 }
 
-.khung .box p {
+.logmenu .box p {
   color: white;
   opacity: 0.8;
+  cursor: pointer;
 }
 
-.khung .box a {
+.logmenu .box a {
   text-decoration: none;
 }
 
-.khung .box:hover {
+.logmenu .box:hover {
   background: transparent;
   color: white;
   background-color: rgba(255, 255, 255, 0.2);
@@ -285,7 +284,7 @@ input.cart_input_quanlity {
   border-radius: 10px;
 }
 
-.khung .box p:hover {
+.logmenu .box p:hover {
   color: white;
   opacity: 1;
 }
@@ -370,7 +369,9 @@ background-color: #ffece1;
   background-color: #649483;
   max-width:100%;
 } */
-
+.cursor{
+  cursor: pointer;
+}
 /* footer */
 
 .footer {

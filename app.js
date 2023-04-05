@@ -57,7 +57,7 @@ function move_signup() {
 
 $(document).ready(function () {
   $("#menu_account_login").on("click", function () {
-    $(".khung").toggleClass("menu_account_show");
+    $(".logmenu").toggleClass("menu_account_show");
   });
 });
 
@@ -803,7 +803,7 @@ function Changepassword() {
     account[checkLogin].password = document.getElementById("passnew").value;
     localStorage.setItem("account", JSON.stringify(account));
     document.getElementById("notification_change_pass").innerHTML =
-      "Change password successfully";
+      "Password Changed successfully";
 
     setTimeout(() => location.reload(), 1000);
   } else {
@@ -833,6 +833,3 @@ function onloadAll() {
   listFood();
   // paymentPrinf();
 }
-
-
-

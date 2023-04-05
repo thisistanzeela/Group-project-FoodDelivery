@@ -12,12 +12,12 @@
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    crossorigin="anonymous"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
@@ -37,8 +37,8 @@
       Healthy switcher chefs do all the prep work, like peeding,<br />
       chopping & marinating, so you can cook a fresh food
     </p>
-      <a class="btn-main" href="#list_food_home">Order Now</a>   
-    
+    <a class="btn-main" href="#list_food_home">Order Now</a>
+
     <nav id=" menu">
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
@@ -52,7 +52,7 @@
         <li>
           <a data-toggle="modal" data-target=".orderCart">Cart <span id="order_number"></span></a>
         </li>
-        <li><a href="" class="text-deco">Contact</a></li>
+        <li class="text-deco"><a href="./contact-us/contact.html">Contact</a></li>
         <li>
           <a id="menu_login_button" data-toggle="modal" data-target=".login">Login</a>
         </li>
@@ -63,7 +63,7 @@
       <!-- nav of the page end -->
       <!-- login-logout -->
       <div id="menu_logout">
-        <div id="menu_header22" class="khung p-3" style="
+        <div id="menu_header22" class="logmenu p-3" style="
               margin: 0 auto;
               width: 200px;
               background: #dd7017;
@@ -86,18 +86,18 @@
           </div>
           <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-lg22" style="height: 35px">
             <p>
-              <i class="fa fa-list-alt text-white mr-3" aria-hidden="true"></i>My Order
+              <i class="fa fa-list-alt text-white  mr-3" aria-hidden="true"></i>My Order
             </p>
           </div>
           <div class="box p-1" data-toggle="modal" data-target=".bd-example-modal-sm33" style="height: 35px">
             <p>
-              <i class="fa fa-key text-white mr-3" aria-hidden="true"></i>Change Pass
+              <i class="fa fa-key  text-white mr-3" aria-hidden="true"></i>Change Pass
             </p>
           </div>
 
           <div class="box p-1" style="height: 35px">
-            <p onclick="Logout()">
-              <i class="fa fa-sign-out text-white mr-3" aria-hidden="true"></i>Logout
+            <p onclick="Logout()" class="cursor">
+              <i class="fa fa-sign-out text-white  mr-3" aria-hidden="true"></i>Logout
             </p>
           </div>
         </div>
@@ -142,23 +142,23 @@
       </div>
     </div>
   </div>
-   <!-- order status of the page end here-->
+  <!-- order status of the page end here-->
   <!-- password can be changed by user-->
   <div class="modal fade bd-example-modal-sm33 mt-5" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel33"
     aria-hidden="true">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-        <div class="iconpopup" style="margin: 0 auto; width: 27%; height: 100%; margin-top: 20%">
+        <!-- <div class="iconpopup" style="margin: 0 auto; width: 27%; height: 100%; margin-top: 20%">
           <img id="notick" src="tick.png" width="100%" />
           <img id="errortick" src="ticknot.png" width="100%" style="display: none" />
           <img id="changeimg" src="defender.png" width="100%" style="display: none" />
-        </div>
+        </div> -->
 
         <div id="changepass" class="iconpopup mt-4" style="margin: 0 auto; width: 80%; margin-bottom: 10%">
           <p class="text-center mb-3" style="font-weight: bold; margin-bottom: 2%; font-size: 120%">
             Change Password
           </p>
-          <p class="mt-3" style="margin-bottom: 2%">User Name</p>
+          <p class="mt-3" style="margin-bottom: 2%">Old Password</p>
           <input type="password" name="pass" id="passcurrent" class="form-control" />
           <p class="mt-1" style="margin-bottom: 2%">New Password</p>
           <input type="password" name="pass" id="passnew" class="form-control" />
@@ -172,7 +172,7 @@
       </div>
     </div>
   </div>
-   <!-- password can be changed by user-- end here-->
+  <!-- password can be changed by user-- end here-->
 
   <!-- sign up -- login page -->
   <div class="modal fade login mt-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -180,15 +180,15 @@
       <div class="modal-content">
         <div class="cart_box" style="width: 100%; margin: auto">
           <div class="login_img_box float-left" style="width: 50%; height: 450px; background: pink">
-            <img src="img_login.jpg" width="100%" height="100%" />
+            <img src="login.png" width="100%" height="100%" />
           </div>
 
           <div id="login_box">
             <div class="login_info_box float-right p-5" style="width: 50%; height: 450px">
               <p class="text-center font-weight-bold" style="font-size: 140%">
-                Sign Up
+                Log In
               </p>
-              <label class="font-weight-bold mt-3">Your Email</label>
+              <label class="font-weight-bold mt-3">UserName</label>
               <input id="usernameLogin" type="text" class="form-control" aria-describedby="emailHelp"
                 placeholder="Enter your email" style="outline: none" />
               <label class="mt-3 font-weight-bold">Password</label>
@@ -203,7 +203,7 @@
                 Log in
               </button>
               <p id="statusLogin" class="text-center mt-4" style="font-size: 90%; color: red"></p>
-              <p onclick="move_signup()" class="text-center mt-3" style="font-size: 90%">
+              <p onclick="move_signup()" class="text-center cursor mt-3" style="font-size: 90%">
                 You don't have an account, Please Sign Up
                 <strong style="color: #dd7017"> Here</strong>
               </p>
@@ -234,7 +234,7 @@
                 Login
               </button>
               <p id="statusSignup" class="text-center mt-3 mb-1" style="font-size: 90%; color: red"></p>
-              <p onclick="move_login()" class="text-center mt-0" style="font-size: 90%">
+              <p onclick="move_login()" class="text-center cursor mt-0" style="font-size: 90%">
                 You already have an account Login<strong style="color: #dd7017">
                   Here</strong>
               </p>
@@ -245,9 +245,9 @@
       </div>
     </div>
   </div>
- <!-- sign up -- login page ---end here-->
+  <!-- sign up -- login page ---end here-->
 
- <!-- cart of the page start here-->
+  <!-- cart of the page start here-->
   <div class="modal fade orderCart mt-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg">
@@ -294,7 +294,7 @@
           </div>
           <div style="clear: both"></div>
         </div>
-<!-- cart of the page end here-->
+        <!-- cart of the page end here-->
         <!--payment code start here  -->
 
         <div id="payment_form" class="p-5" style="width: 100%; height: 400px; display: none">
@@ -324,13 +324,15 @@
           <div class="choose_box p-3 float-right" style="width: 40%; height: 100px">
             <label for="exampleInputEmail1">Name</label>
             <input id="name_customer" type="text" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="your name" />
+              aria-describedby="emailHelp" placeholder="your name" required />
             <label for="exampleInputEmail1" class="mt-3">Phone number</label>
-            <input id="phone_customer" type="text" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="phone number" />
+
+            <input id="phone_customer" type="tel" class="form-control" id="exampleInputEmail1"
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" aria-describedby="emailHelp" required />
+              
             <label for="exampleInputEmail1" class="mt-3">Address</label>
             <input id="address_customer" type="text" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp" placeholder="your address" />
+              aria-describedby="emailHelp" placeholder="your address" required />
             <button onclick="payment()" class="btn btn-primary float-right mt-3">
               Confirm Order
             </button>
@@ -384,55 +386,55 @@
 
   <section class="footer" id="foot">
 
-  <section class="footer">
-    <div class="container">
+    <section class="footer">
+      <div class="container">
         <div class="grid-into4">
-           <div class="dis">
-                <h3>our services</h3>
-                <ol>
-                  <li>What's New</li>
-                  <li>How to Order</li>
-                  <li>Payment Method</li>
-                  <li>Order Status</li>
-                  <li>Subscription</li>
-               </ol>
-            </div>
-            <div class="dis">
-                <h3>our team</h3>
-                <ol>
-                  <li>Our Local Farms</li>
-                  <li>Craftsmanship</li>
-                  <li>Our Sources</li>
-                  <li>Sustainability</li>
-                </ol>
-            </div>
-           <div class="dis">
-                <h3>legal</h3>
-                <ol>
-                   <li>Privacy Policy</li>
-                   <li>Our Promise</li>
-                   <li>More Information</li>
-                </ol>
-            </div>
-            <div class="form">
-                <h3>join our newsletter</h3>
-                <form>
-                    <label for="email">Get the latest update on our meals</label>
-                    <input  id="email" type="email" placeholder="Your E-mail Address"><br>
-                    <input id="submit" type="submit" value="submit">
-                </form>
-            </div>
+          <div class="dis">
+            <h3>our services</h3>
+            <ol>
+              <li>What's New</li>
+              <li>How to Order</li>
+              <li>Payment Method</li>
+              <li>Order Status</li>
+              <li>Subscription</li>
+            </ol>
+          </div>
+          <div class="dis">
+            <h3>our team</h3>
+            <ol>
+              <li>Our Local Farms</li>
+              <li>Craftsmanship</li>
+              <li>Our Sources</li>
+              <li>Sustainability</li>
+            </ol>
+          </div>
+          <div class="dis">
+            <h3>legal</h3>
+            <ol>
+              <li>Privacy Policy</li>
+              <li>Our Promise</li>
+              <li>More Information</li>
+            </ol>
+          </div>
+          <div class="form">
+            <h3>join our newsletter</h3>
+            <form>
+              <label for="email">Get the latest update on our meals</label>
+              <input id="email" type="email" placeholder="Your E-mail Address"><br>
+              <input id="submit" type="submit" value="submit">
+            </form>
+          </div>
         </div>
-    </div>
-    <footer>
+      </div>
+      <footer>
         <div>Copyright 2023 Chef Norman Meals Co.All Rights Reserved.</div>
         <div class="icon">
-           <a href=""><i class="fa fa-facebook-square"></i></a>
-           <a href=""><i class="fa fa-instagram"></i></a>
-           <a href=""><i class="fa fa-twitter"></i>   </a>
+          <a href=""><i class="fa fa-facebook-square"></i></a>
+          <a href=""><i class="fa fa-instagram"></i></a>
+          <a href=""><i class="fa fa-twitter"></i> </a>
         </div>
-    </footer>
-</section> 
+      </footer>
+    </section>
 </body>
 
 </html>
