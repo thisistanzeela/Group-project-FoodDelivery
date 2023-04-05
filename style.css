@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -81,7 +81,7 @@ nav {
 }
 
 label.logo {
-  font-family: 'Creepster' !important;
+  font-family: 'Montserrat Alternates', sans-serif;
   background: linear-gradient(90deg, #649483 0%, #dd7017 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

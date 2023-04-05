@@ -425,7 +425,18 @@ function upQuality(id_order) {
   }
 }
 
+
+
 // user details for order.........
+const mobileNumberInput = document.querySelector(".mobile-number");
+mobileNumberInput.addEventListener("input", formatMobileNumber);
+
+function formatMobileNumber() {
+  const unformattedValue = mobileNumberInput.value.replace(/[^\d]/g, "");
+  const formattedValue = unformattedValue.replace(/(\d{4})(\d{3})(\d{3})/, "$1-$2-$3");
+  mobileNumberInput.value = formattedValue;
+}
+
 document.getElementById("name_customer").value = account[checkLogin].username;
 document.getElementById("phone_customer").value =
   account_info[checkLogin].phone_customer;
@@ -440,6 +451,9 @@ for (let i = 0; i < orderFood.length; i++) {
     localStorage.setItem("CheckInfo", JSON.stringify(CheckInfo));
   }
 }
+
+
+
 // payment details of user...............
 function payment() {
   var id_payment = JSON.parse(localStorage.getItem("id_payment"));
@@ -609,9 +623,9 @@ function orderprinf() {
         `)" class="cart_input_quanlity mt-2" type="number" value="` +
         orderFood[i].quanlity_order +
         `" name="" min="1" max="20" style=""> </td>
-      <td class="text-center"><p class="mt-2" style="padding:5px;">` +
+      <td class="text-center"><p class="mt-2" style="padding:5px;">₹` +
         orderFood[i].price_order * orderFood[i].quanlity_order +
-        `₹</p></td>
+        `</p></td>
       <td class="text-center"><div onclick="delete_order(` +
         orderFood[i].id_order +
         `)" class="cart_button_delete"><i class="fa fa-trash" aria-hidden="true" style="color: #fb9200;font-size: 180%"></i></div> </td>
@@ -819,7 +833,7 @@ function Logout() {
   document.getElementById("menu_logout").style.display = "none";
   checkLogin = -1;
   localStorage.setItem("checkLogin", JSON.stringify(checkLogin));
-  document.getElementById("order_number").innerHTML = "0";
+  document.getElementById("order_number").innerHTML = "";
   document.getElementById("prinf_order_cart").innerHTML = "";
   document.getElementById("payment_form").style.display = "none";
   document.getElementById("checkout_form").style.display = "block";
